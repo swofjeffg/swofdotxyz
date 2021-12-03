@@ -1,0 +1,197 @@
+/*colours:
+dark grey - #222
+*/
+
+::selection {
+    background-color: rgb(83, 83, 83);
+}
+
+* {
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+article {
+    margin-bottom: 3.75em;
+}
+
+.content-wrapper {
+    padding: 4em 10em;
+    overflow: auto;
+    min-width: 21.9em;
+}
+
+.content-wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-header {
+    font-size: 8em;
+    font-weight: bold;
+}
+
+.content {
+    margin: 5.625em 0.625em;
+    display: block;
+    font-size: 1.25em;
+}
+
+.header {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.paragraph {
+    margin: 0.625em 0;
+    line-height: 1.75em;
+}
+
+button {
+    color: #22a;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+.tooltip {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip #tooltip {
+    line-height: 1.2em;
+    transform: translateY(25%);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .75em;
+    visibility: hidden;
+    width: 5em;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 75%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity .3s;
+    transition: .3s;
+}
+
+.tooltip #tooltip::after {
+    content: "";
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.tooltip:hover #tooltip {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.buttons {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.buttons a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 4.375em;
+    color: #222;
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-youtube,
+.fa-github,
+.fa-twitch,
+.fa-paypal {
+    transform: scale(3);
+    transition: .3s;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 7, 90);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 217, 255);
+}
+
+.fa-youtube:hover {
+    color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+    color: rgb(207, 207, 207);
+}
+
+.fa-twitch:hover {
+    color: rgb(144, 0, 173);
+}
+
+.fa-paypal:hover {
+    color: rgb(0, 119, 255);
+}
+
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-youtube:hover,
+.fa-github:hover,
+.fa-twitch:hover,
+.fa-paypal:hover {
+    transform: scale(4);
+}
+
+.fa-instagram:active,
+.fa-twitter:active,
+.fa-youtube:active,
+.fa-github:active,
+.fa-twitch:active,
+.fa-paypal:active {
+    color: #000;
+}
+
+@media only screen and (max-width: 1028px) {
+    .buttons a {
+        margin: 0.9375em 3.75em;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .buttons a {
+        margin: 0 1.2em;
+    }
+    .fa-instagram,
+    .fa-twitter,
+    .fa-youtube,
+    .fa-github,
+    .fa-twitch,
+    .fa-paypal {
+        transform: scale(2.5);
+    }
+    .content-wrapper {
+        padding: 4.6875em 0.3125em;
+    }
+}
