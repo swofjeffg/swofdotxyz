@@ -67,30 +67,28 @@ button {
     font-family: 'Noto Sans', sans-serif;
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 .tooltip #tooltip {
+    transform: translateY(0);
     line-height: 1.2em;
-    transform: translateY(25%);
     font-family: 'Noto Sans', sans-serif;
     font-size: .75em;
     visibility: hidden;
     width: 5em;
     background-color: #222;
     color: #fff;
-    text-align: center;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 75%;
-    margin-left: -75px;
+    right: -50%;
     opacity: 0;
     transition: opacity .3s;
     transition: .3s;
 }
-
 .tooltip #tooltip::after {
     content: "";
     position: absolute;
