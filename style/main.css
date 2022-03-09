@@ -2,6 +2,21 @@
 dark grey - #222
 */
 
+@keyframes load {
+    0% {
+        transform: translateX(-2%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: load 1s;
+}
+
 ::selection {
     background-color: rgb(83, 83, 83);
 }
@@ -89,6 +104,7 @@ button {
     transition: opacity .3s;
     transition: .3s;
 }
+
 .tooltip #tooltip::after {
     content: "";
     position: absolute;
@@ -169,6 +185,16 @@ button {
 .fa-twitch:active,
 .fa-paypal:active {
     color: #000;
+}
+
+.embeded-post {
+    margin-top: 5.625em;
+    place-items: center;
+    display: grid;
+}
+
+.embeded-post>.header {
+    margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 1028px) {
