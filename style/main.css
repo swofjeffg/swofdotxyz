@@ -187,6 +187,16 @@ button {
     color: #000;
 }
 
+.embeded-post {
+    margin-top: 5.625em;
+    place-items: center;
+    display: grid;
+}
+
+.embeded-post>.header {
+    margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 1028px) {
     .buttons a {
         margin: 0.9375em 3.75em;
