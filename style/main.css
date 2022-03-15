@@ -13,6 +13,55 @@ dark grey - #222
     }
 }
 
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__label {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 1;
+    color: #222;
+    font-size: 1.5em;
+    padding: 0.75em;
+    width: fit-content;
+}
+
+.tabs__radio {
+    display: none;
+}
+
+.tabs__content {
+    position: absolute;
+    width: 100%;
+    order: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    overflow: hidden;
+    height: 0%;
+}
+
+.tabs__radio:checked+.tabs__label {
+    font-weight: bold;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content {
+    visibility: visible;
+    overflow: auto;
+    opacity: 1;
+    height: 100%;
+}
+
+.black {
+    background: #222;
+    color: #ebebeb !important;
+}
+
 .animated {
     animation: load 1s;
 }
@@ -22,13 +71,19 @@ dark grey - #222
 }
 
 * {
+    color: inherit;
     margin: auto;
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
 }
 
+body {
+    color: #222222;
+}
+
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 article {
@@ -59,7 +114,7 @@ article {
 }
 
 .header {
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -132,7 +187,7 @@ button {
     text-decoration: none;
     display: inline-block;
     margin: 0 4.375em;
-    color: #222;
+    color: inherit;
 }
 
 .fa-instagram,
