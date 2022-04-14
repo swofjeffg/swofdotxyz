@@ -1,5 +1,7 @@
 /*colours:
-dark grey - #222
+light cream/wheat = #eadcb9
+dark cream = #48331c
+dakrest cream = #29180e
 */
 
 @keyframes load {
@@ -25,7 +27,7 @@ dark grey - #222
     cursor: pointer;
     transition: all .3s;
     z-index: 1;
-    color: #222;
+    color: #eadcb9;
     font-size: 1.5em;
     padding: 0.75em;
     width: fit-content;
@@ -58,13 +60,13 @@ dark grey - #222
 }
 
 .white {
-    background-color: #fff;
-    color: #222222 !important;
+    background-color: #48331c;
+    color: #eadcb9 !important;
 }
 
 .black {
-    background-color: #222;
-    color: #ebebeb !important;
+    background-color: #29180e;
+    color: #724e2e !important;
 }
 
 .animated {
@@ -72,7 +74,7 @@ dark grey - #222
 }
 
 ::selection {
-    background-color: rgb(83, 83, 83);
+    background-color: #421712;
 }
 
 * {
@@ -83,7 +85,7 @@ dark grey - #222
 }
 
 body {
-    color: #222222;
+    color: #eadcb9;
 }
 
 html {
@@ -129,7 +131,7 @@ article {
 }
 
 button {
-    color: #22a;
+    color: #a67026;
     background: none!important;
     border: none;
     padding: 0!important;
@@ -152,8 +154,8 @@ button {
     font-size: .75em;
     visibility: hidden;
     width: 5em;
-    background-color: #222;
-    color: #fff;
+    background-color: #29180e;
+    color: #eadcb9;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
@@ -173,7 +175,7 @@ button {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #222 transparent transparent transparent;
+    border-color: #29180e transparent transparent transparent;
 }
 
 .tooltip:hover #tooltip {
