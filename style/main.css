@@ -8,10 +8,10 @@
 }
 
 * {
-    color: #222;
-    font-family: 'Nanum Gothic', sans-serif;
+    color: #fff;
+    background-color: #222;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
-    background-color: #fff
 }
 
 html,
@@ -31,7 +31,6 @@ body {
 }
 
 .wheel {
-    /*animation: spin 120s infinite linear;*/
     animation: spin 120s infinite linear;
     position: absolute;
     left: 50%;
@@ -41,10 +40,9 @@ body {
 
 .card {
     /*animation: spin 120s infinite linear reverse;*/
-    animation: spin 120s infinite linear reverse;
     width: 50px;
     height: 50px;
-    background-image: url(../imgs/skypeCrying.gif);
+    background-image: url(../imgs/whattheligma.png);
     background-size: contain;
     position: absolute;
     left: 50%;
